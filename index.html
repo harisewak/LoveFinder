@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Finder ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">💕 Love Finder 💕</h1>
+            <p class="subtitle">Discover your love compatibility score!</p>
+        </header>
+
+        <main class="main-content">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="boyName">Boy's Name</label>
+                    <input type="text" id="boyName" placeholder="Enter boy's name..." maxlength="50">
+                </div>
+                
+                <div class="heart-divider">💖</div>
+                
+                <div class="input-group">
+                    <label for="girlName">Girl's Name</label>
+                    <input type="text" id="girlName" placeholder="Enter girl's name..." maxlength="50">
+                </div>
+            </div>
+
+            <button id="findButton" class="find-button" disabled>
+                🔍 Find Love Score
+            </button>
+
+            <div id="results" class="results-section" style="display: none;">
+                <h2>Love Scores 💘</h2>
+                
+                <div class="scores-container">
+                    <div class="score-card boy-score">
+                        <div class="score-label">Boy's Love Score</div>
+                        <div class="score-value" id="boyScore">0%</div>
+                        <div class="score-bar">
+                            <div class="score-fill" id="boyScoreFill"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="score-card girl-score">
+                        <div class="score-label">Girl's Love Score</div>
+                        <div class="score-value" id="girlScore">0%</div>
+                        <div class="score-bar">
+                            <div class="score-fill" id="girlScoreFill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="love-message" id="loveMessage">
+                    💕 Love is in the air! 💕
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for love seekers everywhere</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
